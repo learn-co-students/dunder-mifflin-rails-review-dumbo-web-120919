@@ -1,0 +1,17 @@
+<div>
+    <h2><%= @dog.name %></h2>
+    <h4>Breed: <%= @dog.breed %></h4>
+    <h4>Age: <%= @dog.age %></h4>
+
+    <h2>Meet my Humans</h2>
+
+  <hr>
+  <% @dog.employees.each do |emp| %>
+    <div>
+      <h5>Owner: <%= emp.to_s %></h5>
+    </div>
+    <hr>
+  <% end %>
+
+    <span><%= button_to "Back To The Office", dogs_path, :method => :get %></span>
+</div>
