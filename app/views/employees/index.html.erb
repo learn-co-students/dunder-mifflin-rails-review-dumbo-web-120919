@@ -1,0 +1,15 @@
+<div>
+    <h1>Welcome to Scranton!</h1>
+    <% @employees.each do |employee|%>
+        <h3><%= link_to employee.to_s, employee_path(employee.id)%></h3>
+        <h4> Alias: <%= employee.alias%></h4>
+        <h4> Title: <%= employee.title%></h4>
+        <h4> Office: <%= employee.office%></h4>
+        <h4> Dog: <%= employee.dog.name%> </h4>
+
+        <img class= "index-img" src="<%= employee.img_url%>%" alt="<%= employee.first_name%>">
+        <hr>
+    <%end%>
+
+
+</div>

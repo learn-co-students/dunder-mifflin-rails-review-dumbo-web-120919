@@ -1,0 +1,11 @@
+<div>
+    <h2><%= @employee.to_s %></h2>
+    <h4> Alias: <%= @employee.alias%></h4>
+    <h4> Title: <%= @employee.title%></h4>
+    <h4> Office: <%= @employee.office%></h4>
+    <h4> Dog: <%= @employee.dog.name%> </h4>
+    <img class= "index-img" src="<%= @employee.img_url%>%" alt="<%= @employee.first_name%>">
+
+    <span><%= button_to "Back To The Office", employees_path, :method => :get %></span>
+
+</div>    
