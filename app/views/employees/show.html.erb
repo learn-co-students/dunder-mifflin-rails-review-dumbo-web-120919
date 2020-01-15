@@ -5,7 +5,7 @@
     <h4> Office: <%= @employee.office%></h4>
     <h4> Dog: <%= @employee.dog.name%> </h4>
     <img class= "index-img" src="<%= @employee.img_url%>%" alt="<%= @employee.first_name%>">
-
+    <button class="btn btn-info" style="margin: 1em"><a href="/employees/<%=@employee.id%>/edit">Edit</a>
     <span><%= button_to "Back To The Office", employees_path, :method => :get %></span>
 
 </div>    
