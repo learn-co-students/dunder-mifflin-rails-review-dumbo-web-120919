@@ -1,0 +1,11 @@
+<h1> This pupper </h1>
+
+<p>Name: <%= @dog.name %></p>
+<p>Breed: <%= @dog.breed %></p>
+<p>Age: <%= @dog.age %></p>
+<p> Owner(s):</p>
+<ul> 
+<% @dog.owners.each do |owner| %>
+    <li><%= owner %></li>
+    <% end %>
+</ul>   
